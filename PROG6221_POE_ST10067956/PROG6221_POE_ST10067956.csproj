@@ -61,6 +61,12 @@
     <Compile Include="Recipe.cs" />
     <Compile Include="RecipeManager.cs" />
     <Compile Include="Run.cs" />
+    <Compile Include="Views\UserControls\MenuViewUC.xaml.cs">
+      <DependentUpon>MenuViewUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\RecipeViewUC.xaml.cs">
+      <DependentUpon>RecipeViewUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\WelcomeControl.xaml.cs">
       <DependentUpon>WelcomeControl.xaml</DependentUpon>
     </Compile>
@@ -94,6 +100,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\UserControls\MenuViewUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\RecipeViewUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControls\WelcomeControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
