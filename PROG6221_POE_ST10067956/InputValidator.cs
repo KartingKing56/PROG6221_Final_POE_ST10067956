@@ -10,6 +10,7 @@ namespace PROG6221_POE_ST10067956
     {
         private Dictionary<string, string> validUnits;
         private RecipeManager recipeManager;
+        private Menu menu;
 
         string[] validFoodGroups = new string[6];
 
@@ -20,7 +21,7 @@ namespace PROG6221_POE_ST10067956
 
         //------------------------------------------------------------------------
 
-        public InputValidator(RecipeManager manager)
+        public InputValidator(RecipeManager manager, Menu menu1)
         {
             validUnits = new Dictionary<string, string>
             {
@@ -47,6 +48,7 @@ namespace PROG6221_POE_ST10067956
             };
 
             recipeManager = manager;
+            menu = menu1;
 
             validFoodGroups = new string[]
             {
