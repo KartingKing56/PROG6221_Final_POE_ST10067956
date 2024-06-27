@@ -25,16 +25,51 @@ namespace PROG6221_POE_ST10067956
         public MainWindow()
         {
             InitializeComponent();
-
-            if (test) 
-            {
-                txtTest.Text = "Test Complete";
-            }
         }
 
         private void btnMain_Click(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnRecipeAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnRecipeEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnRecipeDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnItemAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnItemDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnViewRecipe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mnItemView_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

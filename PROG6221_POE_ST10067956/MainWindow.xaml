@@ -15,17 +15,35 @@
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </Window.Resources>
     <Grid>
-        <TextBlock Name="txtTest" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Text="Test" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="96*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Menu Grid.Row="1" Margin="10,0,10,0">
+                <MenuItem Header="Recipe" FontSize="18" VerticalAlignment="Center" Margin="15,8,0,0" FontWeight="SemiBold">
+                    <MenuItem Name="mnViewRecipe" Header="View" Click="mnViewRecipe_Click"/>
+                    <MenuItem Name="mnRecipeAdd" Header="Add" Click="mnRecipeAdd_Click"/>
+                    <MenuItem Name="mnRecipeEdit" Header="Edit" Click="mnRecipeEdit_Click"/>
+                    <MenuItem Name="mnRecipeDelete" Header="Delete" Click="mnRecipeDelete_Click"/>
+                </MenuItem>
+                <MenuItem Header="Menu" FontSize="18" VerticalAlignment="Center" Margin="5,8,0,0" FontWeight="SemiBold">
+                    <MenuItem Name="mnItemView" Header="View" Click="mnItemView_Click"/>
+                    <MenuItem Name="mnItemAdd" Header="Add" Click="mnItemAdd_Click"/>
+                    <MenuItem Name="mnItemDelete" Header="Delete" Click="mnItemDelete_Click"/>
+                </MenuItem>
+            </Menu>
 
-        <Button Name="btnMain" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,0,0" Height="25" Width="50" Content="Move" Click="btnMain_Click" />
+            <UserControls:RecipeViewUC/>
 
 
 
 
 
-
+        </Grid>
         <!-- Absolute last object in this view-->
-        <UserControls:WelcomeControl Visibility="Collapsed"/>
-        
+        <!--UserControls:WelcomeControl/-->
     </Grid>
 </Window>
