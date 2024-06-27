@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PROG6221_POE_ST10067956.Views.UserControls
+namespace PROG6221_POE_ST10067956.Views.Windows
 {
     /// <summary>
-    /// Interaction logic for MainMenuControl.xaml
+    /// Interaction logic for EditItemWin.xaml
     /// </summary>
-    public partial class MainMenuControl : UserControl
+    public partial class EditItemWin : Window
     {
-        public MainMenuControl()
+        public EditItemWin()
         {
             InitializeComponent();
         }
