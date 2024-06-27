@@ -60,11 +60,27 @@
     <Compile Include="MenuItem.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="RecipeManager.cs" />
-    <Compile Include="Views\UserControls\MainMenuControl.xaml.cs">
-      <DependentUpon>MainMenuControl.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Run.cs" />
     <Compile Include="Views\UserControls\WelcomeControl.xaml.cs">
       <DependentUpon>WelcomeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\AddItemWin.xaml.cs">
+      <DependentUpon>AddItemWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\AddRecipeWin.xaml.cs">
+      <DependentUpon>AddRecipeWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\DeleteItemWin.xaml.cs">
+      <DependentUpon>DeleteItemWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\DeleteRecipeWin.xaml.cs">
+      <DependentUpon>DeleteRecipeWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\EditItemWin.xaml.cs">
+      <DependentUpon>EditItemWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\EditRecipeWin.xaml.cs">
+      <DependentUpon>EditRecipeWin.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -78,11 +94,31 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\UserControls\MainMenuControl.xaml">
+    <Page Include="Views\UserControls\WelcomeControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UserControls\WelcomeControl.xaml">
+    <Page Include="Views\Windows\AddItemWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\AddRecipeWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\DeleteItemWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\DeleteRecipeWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\EditItemWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\EditRecipeWin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,5 +149,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

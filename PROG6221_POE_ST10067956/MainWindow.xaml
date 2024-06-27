@@ -11,7 +11,21 @@
         Width="800"
         MinHeight="400"
         MinWidth="650">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
     <Grid>
-        <UserControls:WelcomeControl/>
+        <TextBlock Name="txtTest" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Text="Test" />
+
+        <Button Name="btnMain" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,0,0" Height="25" Width="50" Content="Move" Click="btnMain_Click" />
+
+
+
+
+
+
+        <!-- Absolute last object in this view-->
+        <UserControls:WelcomeControl Visibility="Collapsed"/>
+        
     </Grid>
 </Window>

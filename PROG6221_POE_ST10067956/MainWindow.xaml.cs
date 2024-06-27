@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROG6221_POE_ST10067956.Views.UserControls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,20 @@ namespace PROG6221_POE_ST10067956
     /// </summary>
     public partial class MainWindow : Window
     {
+        public bool test;
         public MainWindow()
         {
             InitializeComponent();
+
+            if (test) 
+            {
+                txtTest.Text = "Test Complete";
+            }
+        }
+
+        private void btnMain_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
